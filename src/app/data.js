@@ -52,7 +52,7 @@ export const courses = [
     },
     {
         id: 5,
-        title: "Computer Science",
+        title: "CS",
         description: "Explore the world of technology and programming, from algorithms to software development.",
         image: "/computer_science.png",
         button: "Visit"
