@@ -601,7 +601,7 @@ export const biologyBranches = [
 export const literatureBasic = {
     definition: "English literature is defined as the body of written or literary works produced in the English language, encompassing various genres, forms, and styles throughout history.",
     title: "English Literature",
-    image: "/literature.png",
+    image: "/english.png",
     explanation: "English literature includes a wide range of works from prose and poetry to drama and essays. It reflects the cultural, social, and political contexts of different time periods, showcasing the evolution of language and storytelling. Prominent themes often include love, nature, identity, conflict, and human experience, making it a rich field for study and appreciation."
 }
 
