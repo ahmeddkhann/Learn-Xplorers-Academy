@@ -790,70 +790,70 @@ export const csPioneers = [
         id: 1,
         name: "Alan Turing",
         span: "1912–1954",
-        image: "/alan_turing.jpg",
+        image: "/alan_turing.png",
         description: "A British mathematician and logician, Turing is considered the father of computer science and artificial intelligence for his work on the Turing machine and code-breaking during WWII."
     },
     {
         id: 2,
         name: "Grace Hopper",
         span: "1906–1992",
-        image: "/grace_hopper.jpg",
+        image: "/grace_hopper.png",
         description: "An American computer scientist and Navy rear admiral, Hopper was a pioneer in computer programming and developed the first compiler for a computer programming language."
     },
     {
         id: 3,
         name: "Ada Lovelace",
         span: "1815–1852",
-        image: "/ada_lovelace.jpg",
+        image: "/ada_lovelace.png",
         description: "Often regarded as the first computer programmer, Lovelace worked on Charles Babbage's early mechanical general-purpose computer, the Analytical Engine."
     },
     {
         id: 4,
         name: "Tim Berners-Lee",
         span: "1955–",
-        image: "/tim_berners_lee.jpg",
+        image: "/tim_berners_lee.png",
         description: "An English engineer and computer scientist, Berners-Lee is best known for inventing the World Wide Web and its protocols, enabling the sharing of information over the Internet."
     },
     {
         id: 5,
         name: "Donald Knuth",
         span: "1938–",
-        image: "/donald_knuth.jpg",
+        image: "/donald_knuth.png",
         description: "An American computer scientist and professor emeritus at Stanford University, Knuth is known for his work on algorithms and typesetting systems, particularly the book series 'The Art of Computer Programming.'"
     },
     {
         id: 6,
         name: "Margaret Hamilton",
         span: "1936–",
-        image: "/margaret_hamilton.jpg",
+        image: "/margaret_hamilton.png",
         description: "An American computer scientist and software engineer, Hamilton was the director of the Software Engineering Division of MIT Instrumentation Laboratory, which developed the onboard flight software for NASA's Apollo missions."
     },
     {
         id: 7,
         name: "John McCarthy",
         span: "1927–2011",
-        image: "/john_mccarthy.jpg",
+        image: "/john_mccarthy.png",
         description: "An American computer scientist and cognitive scientist, McCarthy was a pioneer in artificial intelligence, coining the term 'AI' and developing the Lisp programming language."
     },
     {
         id: 8,
         name: "Bjarne Stroustrup",
         span: "1950–",
-        image: "/bjarne_stroustrup.jpg",
+        image: "/bjarne_stroustrup.png",
         description: "A Danish computer scientist, Stroustrup is known for creating the C++ programming language, which has influenced many other languages and software development practices."
     },
     {
         id: 9,
         name: "Linus Torvalds",
         span: "1969–",
-        image: "/linus_torvalds.jpg",
+        image: "/linus_torvalds.png",
         description: "A Finnish-American software engineer, Torvalds is the creator of the Linux kernel, which is the foundation of many operating systems today."
     },
     {
         id: 10,
         name: "Steve Wozniak",
         span: "1950–",
-        image: "/steve_wozniak.jpg",
+        image: "/steve_wozniak.png",
         description: "An American engineer and co-founder of Apple Inc., Wozniak is known for designing the Apple I and Apple II computers, which were crucial in popularizing personal computing."
     }
 ];
@@ -925,37 +925,37 @@ export const csBranches = [
     {
         "branch": "Artificial Intelligence",
         "description": "The field of study that focuses on creating systems capable of performing tasks that normally require human intelligence, such as learning, reasoning, and problem-solving.",
-        "image": "/images/artificial_intelligence.jpg"
+        "image": "/artificial_intelligence.png"
     },
     {
         "branch": "Data Science",
         "description": "An interdisciplinary field that combines statistics, data analysis, and machine learning to extract insights and knowledge from data.",
-        "image": "/images/data_science.jpg"
+        "image": "/data_science.png"
     },
     {
         "branch": "Software Engineering",
         "description": "The application of engineering principles to software development in a methodical way, focusing on design, development, testing, and maintenance.",
-        "image": "/images/software_engineering.jpg"
+        "image": "/software_engineering.png"
     },
     {
         "branch": "Cybersecurity",
         "description": "The practice of protecting systems, networks, and programs from digital attacks, focusing on maintaining confidentiality, integrity, and availability of information.",
-        "image": "/images/cybersecurity.jpg"
+        "image": "/cybersecurity.png"
     },
     {
         "branch": "Human-Computer Interaction",
         "description": "The study of how people interact with computers and to design technologies that let humans interact with computers in novel ways.",
-        "image": "/images/human_computer_interaction.jpg"
+        "image": "/human_computer_interaction.png"
     },
     {
         "branch": "Computer Networking",
         "description": "The study of how computers communicate over networks, focusing on protocols, architecture, and technologies that enable data exchange.",
-        "image": "/images/computer_networking.jpg"
+        "image": "/computer_networking.png"
     },
     {
         "branch": "Cloud Computing",
         "description": "The delivery of computing services over the internet, allowing for scalable resources and services without direct management by the user.",
-        "image": "/images/cloud_computing.jpg"
+        "image": "/cloud_computing.png"
     }
 ];
 
