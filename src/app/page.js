@@ -5,14 +5,15 @@ import { details } from './data'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Spotlight } from '@/components/ui/spotlight'
+import { WavyBackground } from '@/components/ui/wavy-background'
 
 const Page = () => {
   return (
-    <div className="relative bg-gray-900 text-gray-300 min-h-screen pt-12">
+    <div className="relative bg-gray-900 text-gray-300 min-h-screen pt-12 overflow-hidden">
       
       {/* Spotlight background */}
-      <Spotlight className="top-0 left-0" fill="white" />
-
+      <Spotlight className="top-0 left-0 opacity-100" fill="white" />
+      <WavyBackground className="max-w-4xl mx-auto">
       <div className="flex justify-center">
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 transition-shadow duration-300 hover:shadow-2xl hover:shadow-gray-700">
@@ -37,8 +38,8 @@ const Page = () => {
           </p>
         </div>
       </div>
-
-      <div className="text-center mt-6">
+      </WavyBackground>
+      <div className="text-center mb-6">
         <Link href="/login">
           <button className="px-4 py-2 mr-4 rounded-2xl bg-blue-200 text-gray-800 hover:bg-blue-300 transform transition-transform duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-lg">
             Log In
