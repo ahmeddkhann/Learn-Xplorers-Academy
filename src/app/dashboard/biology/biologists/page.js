@@ -44,7 +44,8 @@ const Biologists = () => {
             {/* Biologist Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-0 sm:mx-4">
                 {biologist.map((bio) => (
-                    <div key={bio.id} className="bg-gray-800 shadow-2xl rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 p-4">
+                    <div key={bio.id} className="bg-gray-800 hover:bg-gray-950 rounded-lg overflow-hidden
+                    opacity-50 hover:opacity-100 hover:translate-x-3 hover:translate-y-3 hover:shadow-white hover:shadow-2xl transition-transform duration-300 hover:scale-105 p-4">
                         <img src={bio.image} alt={bio.name} className="w-full h-32 object-cover rounded-lg mb-4" />
                         <div className="p-4">
                             <h2 className="text-xl text-gray-100 font-bold">{bio.name}</h2>

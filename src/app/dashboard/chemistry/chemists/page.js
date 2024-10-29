@@ -44,7 +44,8 @@ const Chemists = () => {
             {/* Chemist Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-0 sm:mx-4">
                 {chemist.map((chemistItem) => (
-                    <div key={chemistItem.id} className="bg-blue-200 shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 p-4">
+                    <div key={chemistItem.id} className="bg-blue-200 shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:bg-blue-400
+                    opacity-50 hover:opacity-100 hover:translate-x-3 hover:translate-y-3 hover:shadow-white hover:shadow-2xl hover:scale-105 p-4">
                         <img
                             src={chemistItem.image}
                             alt={chemistItem.name}

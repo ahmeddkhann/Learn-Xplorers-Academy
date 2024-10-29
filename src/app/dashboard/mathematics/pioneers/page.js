@@ -44,7 +44,8 @@ const MathPioneers = () => {
             {/* Pioneers Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-0 sm:mx-4">
                 {mathPioneers.map((pioneer) => (
-                    <div key={pioneer.id} className="bg-gray-800 shadow-2xl rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 p-4">
+                    <div key={pioneer.id} className="bg-gray-800 hover:bg-gray-950 shadow-2xl rounded-lg overflow-hidden transition-transform duration-300
+                    opacity-50 hover:opacity-100 hover:translate-x-3 hover:translate-y-3 hover:shadow-white hover:shadow-2xl hover:scale-105 p-4">
                         <img src={pioneer.image} alt={pioneer.name} className="w-full h-48 object-cover mb-4 rounded-lg" />
                         <h2 className="text-xl text-gray-100 font-bold">{pioneer.name}</h2>
                         <p className="text-gray-200 mb-2">{pioneer.span}</p>

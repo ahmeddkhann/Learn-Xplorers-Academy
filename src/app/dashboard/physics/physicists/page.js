@@ -9,9 +9,9 @@ const Physicists = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="bg-gray-900 py-10 min-h-screen hover:text-gray-400">
+        <div className="bg-gray-900 py-10 min-h-screen ">
             {/* Navbar */}
-            <div className="bg-blue-800 p-4 text-gray-300">
+            <div className="bg-blue-800 p-4 text-gray-300 hover:text-gray-400 ">
                 <div className="flex items-center justify-end hover:underline">
                     <button
                         className="text-gray-200 hover:text-gray-300 sm:hidden"
@@ -44,7 +44,9 @@ const Physicists = () => {
             {/* Physicist Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-0 sm:mx-4">
                 {physicist.map((physicistItem) => (
-                    <div key={physicistItem.id} className="bg-blue-200 shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 p-4">
+                    <div key={physicistItem.id} className="bg-blue-200 hover:bg-blue-400
+                    opacity-50 hover:opacity-100 hover:translate-x-3 hover:translate-y-3 hover:shadow-white hover:shadow-2xl
+                     rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 p-4">
                         <img
                             src={physicistItem.image}
                             alt={physicistItem.name}
