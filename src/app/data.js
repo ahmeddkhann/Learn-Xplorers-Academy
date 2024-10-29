@@ -24,9 +24,9 @@ export const feedbackText = {
 export const courses = [
     {
         id: 1,
-        title: "Chemistry",
-        description: "Learn the basics of chemistry and explore the world of atoms, molecules, and reactions.",
-        image: "/chemistry.png",
+        title: "CS",
+        description: "Explore the world of technology and programming, from algorithms to software development.",
+        image: "/computer_science.png",
         button: "Visit"
     },
     {
@@ -38,23 +38,23 @@ export const courses = [
     },
     {
         id: 3,
+        title: "Chemistry",
+        description: "Learn the basics of chemistry and explore the world of atoms, molecules, and reactions.",
+        image: "/chemistry.png",
+        button: "Visit"
+    },
+    {
+        id: 4,
         title: "Biology",
         description: "Understand the foundations of life through biology, studying cells, ecosystems, and biodiversity.",
         image: "/biology.png",
         button: "Visit"
     },
     {
-        id: 4,
+        id: 5,
         title: "English",
         description: "Improve your language skills with English, focusing on grammar, literature, and composition.",
         image: "/english.png",
-        button: "Visit"
-    },
-    {
-        id: 5,
-        title: "CS",
-        description: "Explore the world of technology and programming, from algorithms to software development.",
-        image: "/computer_science.png",
         button: "Visit"
     },
     {
@@ -430,70 +430,70 @@ export const biologist = [
         id: 1,
         name: "Charles Darwin",
         span: "1809–1882",
-        image: "/charles_darwin.jpg",
+        image: "/charles_darwin.png",
         description: "An English naturalist known for developing the theory of evolution by natural selection, which fundamentally changed the understanding of biological diversity."
     },
     {
         id: 2,
         name: "Gregor Mendel",
         span: "1822–1884",
-        image: "/gregor_mendel.jpg",
+        image: "/gregor_mendel.png",
         description: "An Austrian monk and scientist known as the father of modern genetics for his experiments with pea plants that established the laws of inheritance."
     },
     {
         id: 3,
         name: "Louis Pasteur",
         span: "1822–1895",
-        image: "/louis_pasteur.jpg",
+        image: "/louis_pasteur.png",
         description: "A French biologist renowned for his discoveries in microbiology, including the principles of vaccination and pasteurization."
     },
     {
         id: 4,
         name: "Richard Dawkins",
         span: "1941–",
-        image: "/richard_dawkins.jpg",
+        image: "/richard_dawkins.png",
         description: "An English evolutionary biologist known for his work on gene-centered evolution and popular science books, including 'The Selfish Gene.'"
     },
     {
         id: 5,
         name: "Jane Goodall",
         span: "1934–",
-        image: "/jane_goodall.jpg",
+        image: "/jane_goodall.png",
         description: "A British primatologist and anthropologist recognized for her groundbreaking studies of social and family interactions of wild chimpanzees."
     },
     {
         id: 6,
         name: "Barbara McClintock",
         span: "1902–1992",
-        image: "/barbara_mcclintock.jpg",
+        image: "/barbara_mcclintock.png",
         description: "An American scientist awarded the Nobel Prize in Physiology or Medicine for her discovery of genetic transposition, or 'jumping genes.'"
     },
     {
         id: 7,
         name: "James Watson",
         span: "1920–",
-        image: "/james_watson.jpg",
+        image: "/james_watson.png",
         description: "An American molecular biologist who co-discovered the structure of DNA alongside Francis Crick, earning the Nobel Prize in Physiology or Medicine."
     },
     {
         id: 8,
         name: "Rosalind Franklin",
         span: "1920–1958",
-        image: "/rosalind_franklin_biology.jpg",
+        image: "/rosalind_franklin_biology.png",
         description: "A British chemist whose X-ray diffraction work was critical to understanding the molecular structure of DNA, RNA, and viruses."
     },
     {
         id: 9,
         name: "E. O. Wilson",
         span: "1929–2021",
-        image: "/e_o_wilson.jpg",
+        image: "/e_o_wilson.png",
         description: "An American biologist known for his work on biodiversity and sociobiology, and for popularizing the study of ants and other social insects."
     },
     {
         id: 10,
         name: "Carl Linnaeus",
         span: "1707–1778",
-        image: "/carl_linnaeus.jpg",
+        image: "/carl_linnaeus.png",
         description: "A Swedish botanist who developed the binomial nomenclature system for classifying and naming organisms, laying the foundation for modern taxonomy."
     }
 ];
@@ -565,37 +565,37 @@ export const biologyBranches = [
     {
         "branch": "Cell Biology",
         "description": "The study of cells, their physiological properties, structure, the organelles they contain, interactions with their environment, and their role in the overall functioning of organisms.",
-        "image": "/images/cell_biology.jpg"
+        "image": "/cell_biology.png"
     },
     {
         "branch": "Genetics",
         "description": "The branch of biology that deals with heredity and variation in organisms, focusing on the study of genes, genetic variation, and heredity in living organisms.",
-        "image": "/images/genetics.jpg"
+        "image": "/genetics.png"
     },
     {
         "branch": "Ecology",
         "description": "The study of the interactions between organisms and their environment, including the relationships and effects organisms have on one another and their ecosystems.",
-        "image": "/images/ecology.jpg"
+        "image": "/ecology.png"
     },
     {
         "branch": "Evolutionary Biology",
         "description": "The study of the origins and changes in the diversity of life over time, focusing on the processes that lead to the evolution of species and the adaptation of organisms.",
-        "image": "/images/evolutionary_biology.jpg"
+        "image": "/evolutionary_biology.png"
     },
     {
         "branch": "Microbiology",
         "description": "The study of microscopic organisms, including bacteria, viruses, fungi, and protozoa, and their interactions with living hosts and the environment.",
-        "image": "/images/microbiology.jpg"
+        "image": "/microbiology.png"
     },
     {
         "branch": "Botany",
         "description": "The study of plants, including their physiology, structure, genetics, ecology, distribution, and classification.",
-        "image": "/images/botany.jpg"
+        "image": "/botany.png"
     },
     {
         "branch": "Zoology",
         "description": "The scientific study of animals, including their biology, behavior, evolution, classification, and conservation.",
-        "image": "/images/zoology.jpg"
+        "image": "/zoology.png"
     }
 ]
 export const literatureBasic = {
