@@ -9,9 +9,9 @@ const Literature = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="bg-gray-900 py-10 min-h-screen overflow-hidden hover:text-gray-400">
+        <div className="bg-gray-900 py-10 min-h-screen overflow-hidden dark:bg-black dark:bg-grid-small-white/[0.2] bg-grid-small-white/[0.2] ">
             {/* Navbar */}
-            <div className="bg-purple-800 p-4 text-gray-300">
+            <div className="bg-purple-800 p-4 text-gray-300 hover:text-gray-400">
                 <div className="flex justify-end items-center hover:underline">
                     <button
                         className="text-gray-200 hover:text-gray-300 sm:hidden"
