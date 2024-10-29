@@ -11,8 +11,8 @@ const Books = () => {
     return (
         <div className="bg-gray-900 py-10 min-h-screen">
             {/* Navbar */}
-            <div className="bg-blue-800 p-4 text-gray-300">
-                <div className="flex justify-end items-center">
+            <div className="bg-blue-800 p-4 text-gray-300 hover:text-gray-400">
+                <div className="flex justify-end items-center hover:underline">
                     <button
                         className="text-gray-200 hover:text-gray-300 sm:hidden"
                         onClick={() => setIsOpen(!isOpen)}
@@ -21,16 +21,16 @@ const Books = () => {
                     </button>
                 </div>
                 <div className={`sm:flex ${isOpen ? 'block' : 'hidden'} justify-end`}>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300" href={"/dashboard/chemistry"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard/chemistry"}>
                         Home
                     </Link>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300" href={"/dashboard/chemistry/books"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard/chemistry/books"}>
                         Books
                     </Link>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300" href={"/dashboard/chemistry/chemists"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard/chemistry/chemists"}>
                         Chemists
                     </Link>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300" href={"/dashboard"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard"}>
                         Dashboard
                     </Link>
                 </div>

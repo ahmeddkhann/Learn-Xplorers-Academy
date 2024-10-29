@@ -9,10 +9,10 @@ const Physicists = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="bg-gray-900 py-10 min-h-screen">
+        <div className="bg-gray-900 py-10 min-h-screen hover:text-gray-400">
             {/* Navbar */}
             <div className="bg-blue-800 p-4 text-gray-300">
-                <div className="flex items-center justify-end">
+                <div className="flex items-center justify-end hover:underline">
                     <button
                         className="text-gray-200 hover:text-gray-300 sm:hidden"
                         onClick={() => setIsOpen(!isOpen)}
@@ -21,16 +21,16 @@ const Physicists = () => {
                     </button>
                 </div>
                 <div className={`sm:flex ${isOpen ? 'block' : 'hidden'} justify-end`}>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300" href={"/dashboard/physics"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard/physics"}>
                         Home
                     </Link>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300" href={"/dashboard/physics/books"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard/physics/books"}>
                         Books
                     </Link>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300" href={"/dashboard/physics/physicists"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard/physics/physicists"}>
                         Physicists
                     </Link>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300" href={"/dashboard"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard"}>
                         Dashboard
                     </Link>
                 </div>

@@ -11,8 +11,8 @@ const Biologists = () => {
     return (
         <div className="bg-gray-900 py-10 min-h-screen overflow-hidden">
             {/* Navbar */}
-            <div className="bg-green-800 p-4 text-gray-300">
-                <div className="flex justify-end items-center">
+            <div className="bg-green-800 p-4 text-gray-300 hover:text-gray-400">
+                <div className="flex justify-end items-center hover:underline">
                     <button
                         className="text-gray-200 hover:text-gray-300 sm:hidden"
                         onClick={() => setIsOpen(!isOpen)}
@@ -21,16 +21,16 @@ const Biologists = () => {
                     </button>
                 </div>
                 <div className={`sm:flex ${isOpen ? 'block' : 'hidden'} justify-end`}>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300" href={"/dashboard/biology"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard/biology"}>
                         Home
                     </Link>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300" href={"/dashboard/biology/books"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard/biology/books"}>
                         Books
                     </Link>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300" href={"/dashboard/biology/biologists"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard/biology/biologists"}>
                         Scientists
                     </Link>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300" href={"/dashboard"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard"}>
                         Dashboard
                     </Link>
                 </div>

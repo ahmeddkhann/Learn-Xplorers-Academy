@@ -9,10 +9,10 @@ const Literature = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="bg-gray-900 py-10 min-h-screen overflow-hidden">
+        <div className="bg-gray-900 py-10 min-h-screen overflow-hidden hover:text-gray-400">
             {/* Navbar */}
             <div className="bg-purple-800 p-4 text-gray-300">
-                <div className="flex justify-end items-center">
+                <div className="flex justify-end items-center hover:underline">
                     <button
                         className="text-gray-200 hover:text-gray-300 sm:hidden"
                         onClick={() => setIsOpen(!isOpen)}
@@ -21,16 +21,16 @@ const Literature = () => {
                     </button>
                 </div>
                 <div className={`sm:flex ${isOpen ? 'block' : 'hidden'} justify-end`}>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300" href={"/dashboard/english"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard/english"}>
                         Home
                     </Link>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300" href={"/dashboard/english/books"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard/english/books"}>
                         Books
                     </Link>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300" href={"/dashboard/english/authors"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard/english/authors"}>
                         Authors
                     </Link>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300" href={"/dashboard"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard"}>
                         Dashboard
                     </Link>
                 </div>
