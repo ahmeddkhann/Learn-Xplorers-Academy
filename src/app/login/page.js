@@ -1,58 +1,60 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react'
-import axios from 'axios'
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
-import Link from 'next/link'
-import { useRouter } from 'next/navigation'
-import { loginText } from '../data'
+import React, { useState } from 'react';
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { loginText } from '../data';
+import { BackgroundBeams } from '@/components/ui/background-beams';
 
 const LogInPage = () => {
-    const [formData, setFormData] = useState({ username: '', password: '', email: '' })
-    const router = useRouter()
+    const [formData, setFormData] = useState({ username: '', password: '', email: '' });
+    const router = useRouter();
 
     const handleChange = (e) => {
-        const { name, value } = e.target
-        setFormData({ ...formData, [name]: value })
-    }
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
 
-    
     const handleSubmit = async (e) => {
-        e.preventDefault()
+        e.preventDefault();
         try {
-            const response = await axios.post('/api/signin', formData)
-    
+            const response = await axios.post('/api/signin', formData);
+
             if (response.data.success) {
                 toast.success(response.data.message, {
                     position: "bottom-right",
                     autoClose: 5000,
                     hideProgressBar: true,
-                })
+                });
                 
                 setTimeout(() => {
-                    router.push('/dashboard')
-                }, 500) // half-second delay
+                    router.push('/dashboard');
+                }, 500); // half-second delay
             }
         } catch (error) {
-            const errorMessage = error.response?.data?.message || 'Login failed'
+            const errorMessage = error.response?.data?.message || 'Login failed';
             toast.error(errorMessage, {
                 position: "bottom-right",
                 autoClose: 3000,
                 hideProgressBar: true,
-            })
+            });
         }
-    }
-    
+    };
 
     return (
         <div className="bg-gray-900 text-gray-300 min-h-screen flex items-center justify-center p-4">
             <ToastContainer />
-            <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md">
+            <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md bg-grid-white/[0.1] relative overflow-hidden">
+                {/* Overlay gradient for faded look without pointer-events-none */}
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-60"></div>
+
                 <h1 className="text-3xl font-bold text-center mb-4">{loginText.title}</h1>
                 <p className="text-center mb-6 text-gray-400">{loginText.text}</p>
                 
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-4 relative z-10">
                     <div>
                         <label htmlFor="email" className="block text-gray-400 mb-1">Email</label>
                         <input
@@ -100,17 +102,18 @@ const LogInPage = () => {
                     </button>
                 </form>
 
-                <div className="flex justify-between items-center mt-4 text-sm">
+                <div className="flex justify-between items-center mt-4 text-sm relative z-10">
                     <Link href="/signup">
-                        <p className="text-blue-400 hover:underline">Create an account</p>
+                        <p className="text-blue-400 hover:underline cursor-pointer">Create an account</p>
                     </Link>
                     <Link href="/">
-                        <p className="text-blue-400 hover:underline">Want to go back?</p>
+                        <p className="text-blue-400 hover:underline cursor-pointer">Want to go back?</p>
                     </Link>
                 </div>
             </div>
+            <BackgroundBeams />
         </div>
-    )
-}
+    );
+};
 
-export default LogInPage
+export default LogInPage;

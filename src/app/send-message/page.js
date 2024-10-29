@@ -4,9 +4,14 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { feedbackText } from '../data'
+import { BackgroundBeams } from '@/components/ui/background-beams'
+
 const SendMessagePage = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' })
+    const router = useRouter()
 
     const handleChange = (e) => {
         const { name, value } = e.target
@@ -39,11 +44,13 @@ const SendMessagePage = () => {
     return (
         <div className="bg-gray-900 text-gray-300 min-h-screen flex items-center justify-center p-4">
             <ToastContainer />
-            <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md">
+            <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md relative overflow-hidden bg-grid-white/[0.1]">
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-60"></div>
+
                 <h1 className="text-3xl font-bold text-center mb-4">{feedbackText.title}</h1>
                 <p className="text-center mb-6 text-gray-400">{feedbackText.text}</p>
-                
-                <form onSubmit={handleSubmit} className="space-y-4">
+
+                <form onSubmit={handleSubmit} className="space-y-4 relative z-10">
                     <div>
                         <label htmlFor="name" className="block text-gray-400 mb-1">Name</label>
                         <input
@@ -90,7 +97,10 @@ const SendMessagePage = () => {
                         Send Feedback
                     </button>
                 </form>
+
+                
             </div>
+            <BackgroundBeams />
         </div>
     )
 }

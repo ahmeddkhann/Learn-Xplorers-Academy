@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { signUpText } from '../data'
+import { BackgroundBeams } from '@/components/ui/background-beams'
 
 const SignUpPage = () => {
     const [formData, setFormData] = useState({ name: '', email: '', username: '', password: '', gender: '', phone: '' })
@@ -21,14 +22,14 @@ const SignUpPage = () => {
         e.preventDefault()
         try {
             const response = await axios.post('/api/signup', formData)
-    
+
             if (response.data.success) {
                 toast.success(response.data.message, {
                     position: "bottom-right",
                     autoClose: 5000,
                     hideProgressBar: true,
                 })
-                
+
                 setTimeout(() => {
                     router.push('/dashboard')
                 }, 500) // half-second delay
@@ -42,15 +43,18 @@ const SignUpPage = () => {
             })
         }
     }
-    
+
     return (
         <div className="bg-gray-900 text-gray-300 min-h-screen flex items-center justify-center p-4">
             <ToastContainer />
-            <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md">
+            <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md bg-grid-white/[0.1] relative overflow-hidden">
+                {/* Overlay gradient for faded look */}
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-60"></div>
+
                 <h1 className="text-3xl font-bold text-center mb-4">{signUpText.title}</h1> {/* Dynamic title */}
                 <p className="text-center mb-6 text-gray-400">{signUpText.text}</p> {/* Dynamic text */}
-                
-                <form onSubmit={handleSubmit} className="space-y-4">
+
+                <form onSubmit={handleSubmit} className="space-y-4 relative z-10">
                     <div>
                         <label htmlFor="name" className="block text-gray-400 mb-1">Name</label>
                         <input
@@ -128,7 +132,7 @@ const SignUpPage = () => {
                             onChange={handleChange}
                             required
                             className="w-full px-4 py-2 rounded-md bg-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            placeholder=" phone number"
+                            placeholder="Phone number"
                         />
                     </div>
                     <button
@@ -139,15 +143,14 @@ const SignUpPage = () => {
                     </button>
                 </form>
 
-                <div className="flex justify-center mt-4 text-sm">
+                <div className="flex justify-center mt-4 text-sm relative z-10">
                     <p className="text-gray-400">Already have an account? </p>
                     <Link href="/login">
                         <p className="text-blue-400 hover:underline ml-1">Log in</p>
                     </Link>
-                    
                 </div>
-                
             </div>
+            <BackgroundBeams />
         </div>
     )
 }
