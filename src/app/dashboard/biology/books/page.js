@@ -4,6 +4,7 @@
 import React, { useState } from 'react';
 import { biologyBooks } from '@/app/data';
 import Link from 'next/link';
+import { BackgroundGradient } from '@/components/ui/background-gradient';
 
 const BiologyBooks = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +31,7 @@ const BiologyBooks = () => {
                     <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard/biology/biologists"}>
                         Scientists
                     </Link>
-                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 hover:underline" href={"/dashboard"}>
+                    <Link className="block mr-10 text-gray-200 hover:text-gray-300 " href={"/dashboard"}>
                         Dashboard
                     </Link>
                 </div>
@@ -43,17 +44,17 @@ const BiologyBooks = () => {
 
             {/* Book Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-0 sm:mx-4">
-                {biologyBooks.map((book, index) => (
-                    <div key={index} className="bg-gray-800 shadow-2xl rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 p-4">
-                        <div className="p-4">
-                            <h2 className="text-xl text-gray-100 font-bold">{book.title}</h2>
-                            <p className="text-gray-200 mb-2">by {book.author}</p>
-                            <p className="text-gray-300">Published: {book.year}</p>
-                            <p className="text-gray-400 mt-2">{book.description}</p>
-                        </div>
-                    </div>
-                ))}
+        {biologyBooks.map((book, index) => (
+          <BackgroundGradient key={index} className="rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 p-4">
+            <div className="p-4 bg-gray-800 shadow-2xl">
+              <h2 className="text-xl text-gray-100 font-bold">{book.title}</h2>
+              <p className="text-gray-200 mb-2">by {book.author}</p>
+              <p className="text-gray-300">Published: {book.year}</p>
+              <p className="text-gray-400 mt-2">{book.description}</p>
             </div>
+          </BackgroundGradient>
+        ))}
+      </div>
         </div>
     );
 };

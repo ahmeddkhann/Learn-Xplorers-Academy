@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { details, courses } from "../data";
+import { Meteors } from "@/components/ui/meteors";
 
 const DashboardPage = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -74,32 +75,34 @@ const DashboardPage = () => {
        </div>
 
         {/* Courses Section */}
-        <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 w-full">
-          {courses.map((course) => (
-            <div
-              key={course.id}
-              className="bg-gray-800 rounded-lg shadow-md overflow-hidden"
-            >
-              <Image
-                src={course.image}
-                width={400}
-                height={150}
-                alt={course.title}
-                className="w-full h-32 object-cover" // Shorter height for the image
-              />
-              <div className="p-3">
-                <h3 className="text-lg font-semibold mb-2">{course.title}</h3>
-                <p className="text-gray-200 mb-3 text-sm opacity-50">{course.description}</p>
-                <Link href={`/dashboard/${course.title.toLowerCase()}`}>
-                  <button className="w-full py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300">
-                    {course.button}
-                  </button>
-                </Link>
-              </div>
-            </div>
-          ))}
-        </section>
+       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 w-full">
+  {courses.map((course) => (
+    <div
+      key={course.id}
+      className="bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+    >
+      <Image
+        src={course.image}
+        width={400}
+        height={150}
+        alt={course.title}
+        className="w-full h-32 object-cover" // Shorter height for the image
+      />
+      <div className="p-3">
+        <h3 className="text-lg font-semibold mb-2">{course.title}</h3>
+        <p className="text-gray-200 mb-3 text-sm opacity-50">{course.description}</p>
+        <Link href={`/dashboard/${course.title.toLowerCase()}`}>
+          <button className="w-full py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300">
+            {course.button}
+          </button>
+        </Link>
+      </div>
+    </div>
+  ))}
+</section>
+
       </main>
+      <Meteors number={100} />
     </div>
   );
 };
