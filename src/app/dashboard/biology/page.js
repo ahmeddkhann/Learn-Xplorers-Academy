@@ -52,10 +52,10 @@ const Biology = () => {
             <h2 className="text-3xl font-semibold text-white text-center mt-10 mb-4">Branches of Biology</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {biologyBranches.map((branch, index) => (
-                    <div key={index} className="bg-green-600 text-gray-800 shadow-md rounded-lg p-4 mx-4 transition-transform duration-300 hover:scale-105">
+                    <div key={index} className="bg-green-300 text-gray-800 shadow-md rounded-lg p-4 mx-4 transition-transform duration-300 hover:scale-105">
                         <img src={branch.image} alt={branch.branch} className="w-full h-32 object-cover rounded-lg mb-4" />
                         <h3 className="text-xl font-semibold">{branch.branch}</h3>
-                        <p className="text-gray-300">{branch.description}</p>
+                        <p className="text-gray-900 opacity-75 text-sm mt-2">{branch.description}</p>
                     </div>
                 ))}
             </div>

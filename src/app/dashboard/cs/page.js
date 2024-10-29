@@ -55,7 +55,7 @@ const CSBranches = () => {
                     <div key={index} className="bg-gray-800 shadow-2xl rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 p-4">
                         <img src={branch.image} alt={branch.branch} className="w-full h-48 object-cover mb-4 rounded-lg" />
                         <h2 className="text-xl text-gray-100 font-bold">{branch.branch}</h2>
-                        <p className="text-gray-200 mb-2">{branch.description}</p>
+                        <p className="text-gray-200 text-sm mt-2 opacity-50 mb-2">{branch.description}</p>
                     </div>
                 ))}
             </div>
