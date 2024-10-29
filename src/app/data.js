@@ -972,70 +972,70 @@ export const mathPioneers = [
         id: 1,
         name: "Euclid",
         span: "circa 300 BC",
-        image: "/euclid.jpg",
+        image: "/euclid.png",
         description: "An ancient Greek mathematician known as the 'Father of Geometry' for his work 'Elements,' which systematized the principles of geometry."
     },
     {
         id: 2,
         name: "Isaac Newton",
         span: "1643–1727",
-        image: "/isaac_newton.jpg",
+        image: "/isaac_newton.png",
         description: "An English mathematician and physicist who made significant contributions to calculus and the laws of motion and gravitation."
     },
     {
         id: 3,
         name: "Carl Friedrich Gauss",
         span: "1777–1855",
-        image: "/carl_friedrich_gauss.jpg",
+        image: "/carl_friedrich_gauss.png",
         description: "A German mathematician who contributed to number theory, statistics, and the method of least squares, often referred to as the 'Prince of Mathematicians.'"
     },
     {
         id: 4,
         name: "Leonhard Euler",
         span: "1707–1783",
-        image: "/leonhard_euler.jpg",
+        image: "/leonhard_euler.png",
         description: "A Swiss mathematician and physicist who made groundbreaking contributions to various areas of mathematics, including topology, calculus, and graph theory."
     },
     {
         id: 5,
         name: "Georg Cantor",
         span: "1845–1918",
-        image: "/georg_cantor.jpg",
+        image: "/georg_cantor.png",
         description: "A German mathematician known for founding set theory and introducing the concept of different sizes of infinity."
     },
     {
         id: 6,
         name: "David Hilbert",
         span: "1862–1943",
-        image: "/david_hilbert.jpg",
+        image: "/david_hilbert.png",
         description: "A German mathematician who made significant contributions to various fields, including algebra, number theory, and mathematical logic, known for Hilbert's problems."
     },
     {
         id: 7,
         name: "Emmy Noether",
         span: "1882–1935",
-        image: "/emmy_noether.jpg",
+        image: "/emmy_noether.png",
         description: "A German mathematician who made groundbreaking contributions to abstract algebra and theoretical physics, known for Noether's theorem."
     },
     {
         id: 8,
         name: "John von Neumann",
         span: "1903–1957",
-        image: "/john_von_neumann.jpg",
+        image: "/john_von_neumann.png",
         description: "A Hungarian-American mathematician who made contributions to functional analysis, game theory, and the development of computers."
     },
     {
         id: 9,
         name: "Kurt Gödel",
         span: "1906–1978",
-        image: "/kurt_godel.jpg",
+        image: "/kurt_godel.png",
         description: "An Austrian-American logician and mathematician known for his incompleteness theorems, which have far-reaching implications in mathematics and logic."
     },
     {
         id: 10,
         name: "Andrew Wiles",
         span: "1953–",
-        image: "/andrew_wiles.jpg",
+        image: "/andrew_wiles.png",
         description: "A British mathematician best known for proving Fermat's Last Theorem, a problem that remained unsolved for over 350 years."
     }
 ];
@@ -1107,36 +1107,36 @@ export const mathBranches = [
     {
         "branch": "Algebra",
         "description": "The branch of mathematics dealing with symbols and the rules for manipulating those symbols; it includes everything from solving simple equations to studying abstractions such as groups and rings.",
-        "image": "/images/algebra.jpg"
+        "image": "/algebra.png"
     },
     {
         "branch": "Geometry",
         "description": "The study of shapes, sizes, and properties of space; it explores concepts such as points, lines, surfaces, and solids, along with their relationships.",
-        "image": "/images/geometry.jpg"
+        "image": "/geometry.png"
     },
     {
         "branch": "Calculus",
         "description": "The branch of mathematics that deals with the study of change and motion, encompassing differentiation and integration, and applied in various fields such as physics and engineering.",
-        "image": "/images/calculus.jpg"
+        "image": "/calculus.png"
     },
     {
         "branch": "Statistics",
         "description": "The study of data collection, analysis, interpretation, presentation, and organization, used in various fields to make informed decisions based on data.",
-        "image": "/images/statistics.jpg"
+        "image": "/statistics.png"
     },
     {
         "branch": "Number Theory",
         "description": "The study of integers and their properties, focusing on prime numbers, divisibility, and the relationships between numbers.",
-        "image": "/images/number_theory.jpg"
+        "image": "/number_theory.png"
     },
     {
         "branch": "Combinatorics",
         "description": "The study of counting, arrangement, and combination of objects, often used in fields such as computer science and optimization.",
-        "image": "/images/combinatorics.jpg"
+        "image": "/combinatorics.png"
     },
     {
         "branch": "Topology",
         "description": "The study of properties of space that are preserved under continuous transformations, focusing on concepts like continuity and compactness.",
-        "image": "/images/topology.jpg"
+        "image": "/topology.png"
     }
 ];

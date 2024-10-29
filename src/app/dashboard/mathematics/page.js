@@ -56,7 +56,7 @@ const Mathematics = () => {
                         <img src={branch.image} alt={branch.branch} className="w-full h-48 object-cover" />
                         <div className="p-4">
                             <h2 className="text-xl text-gray-100 font-bold">{branch.branch}</h2>
-                            <p className="text-gray-200 mb-2">{branch.description}</p>
+                            <p className="text-gray-200 text-sm mt-2 opacity-50 mb-2">{branch.description}</p>
                         </div>
                     </div>
                 ))}
