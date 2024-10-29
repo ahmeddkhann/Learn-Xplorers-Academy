@@ -9,7 +9,7 @@ import { WavyBackground } from '@/components/ui/wavy-background'
 
 const Page = () => {
   return (
-    <div className="relative bg-gray-900 text-gray-300 min-h-screen pt-12 overflow-hidden">
+    <div className="relative bg-gray-900 text-gray-300 min-h-screen pt-12 overflow-hidden ">
       
       {/* Spotlight background */}
       <Spotlight className="top-0 left-0 opacity-100" fill="white" />

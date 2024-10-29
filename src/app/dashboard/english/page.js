@@ -51,15 +51,25 @@ const Literature = () => {
 
             {/* Literature Genres */}
             <h2 className="text-3xl font-semibold text-white text-center mt-10 mb-4">Genres of English Literature</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-4">
-                {literatureGenres.map((genre, index) => (
-                    <div key={index} className="bg-purple-300 shadow-md rounded-lg p-4 transition-transform duration-300 hover:scale-105">
-                        <img src={genre.image} alt={genre.genre} className="w-full h-32 object-cover rounded-lg mb-4" />
-                        <h3 className="text-xl font-semibold text-gray-900">{genre.genre}</h3>
-                        <p className="text-gray-700 text-sm opacity-75">{genre.description}</p>
-                    </div>
-                ))}
-            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        {literatureGenres.map((branch, index) => (
+          <div
+            key={index}
+            className="bg-gray-600 opacity-50 hover:opacity-100 hover:bg-gray-800 shadow-md rounded-lg p-4 
+            mx-4 transition-transform duration-300 transform hover:scale-105  hover:shadow-2xl hover:shadow-white "
+          >
+            <img
+              src={branch.image}
+              alt={branch.branch}
+              className="w-full h-32 object-cover rounded-lg mb-4 opacity-100"
+            />
+            <h3 className="text-xl font-semibold opacity-100">
+              {branch.branch}
+            </h3>
+            <p className="text-gray-300 text-sm ">{branch.description}</p>
+          </div>
+        ))}
+      </div>
         </div>
     );
 };
