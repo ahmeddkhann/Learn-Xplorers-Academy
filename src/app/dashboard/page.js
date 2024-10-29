@@ -89,7 +89,7 @@ const DashboardPage = () => {
               />
               <div className="p-3">
                 <h3 className="text-lg font-semibold mb-2">{course.title}</h3>
-                <p className="text-gray-400 mb-3 text-sm">{course.description}</p>
+                <p className="text-gray-200 mb-3 text-sm opacity-50">{course.description}</p>
                 <Link href={`/dashboard/${course.title.toLowerCase()}`}>
                   <button className="w-full py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300">
                     {course.button}

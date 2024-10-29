@@ -4,10 +4,15 @@ import React from 'react'
 import { details } from './data'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Spotlight } from '@/components/ui/spotlight'
 
 const Page = () => {
   return (
-    <div className="bg-gray-900 text-gray-300 min-h-screen pt-12">
+    <div className="relative bg-gray-900 text-gray-300 min-h-screen pt-12">
+      
+      {/* Spotlight background */}
+      <Spotlight className="top-0 left-0" fill="white" />
+
       <div className="flex justify-center">
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 transition-shadow duration-300 hover:shadow-2xl hover:shadow-gray-700">
