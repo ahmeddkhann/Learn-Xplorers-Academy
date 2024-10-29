@@ -254,70 +254,70 @@ export const physicist = [
         id: 1,
         name: "Albert Einstein",
         span: "1879–1955",
-        image: "/albert_einstein.jpg",
+        image: "/albert_einstein.png",
         description: "Theoretical physicist known for developing the theory of relativity and the famous equation E=mc², which expresses the equivalence of mass and energy."
     },
     {
         id: 2,
         name: "Isaac Newton",
         span: "1643–1727",
-        image: "/isaac_newton.jpg",
+        image: "/isaac_newton.png",
         description: "An English mathematician and physicist who formulated the laws of motion and universal gravitation, laying the groundwork for classical mechanics."
     },
     {
         id: 3,
         name: "Niels Bohr",
         span: "1885–1962",
-        image: "/niels_bohr.jpg",
+        image: "/niels_bohr.png",
         description: "Danish physicist who made foundational contributions to understanding atomic structure and quantum theory, particularly the Bohr model of the atom."
     },
     {
         id: 4,
         name: "Galileo Galilei",
         span: "1564–1642",
-        image: "/galileo_galilei.jpg",
+        image: "/galileo_galilei.png",
         description: "An Italian astronomer and physicist who played a major role in the Scientific Revolution and is known for his contributions to motion, astronomy, and the scientific method."
     },
     {
         id: 5,
         name: "Stephen Hawking",
         span: "1942–2018",
-        image: "/stephen_hawking.jpg",
+        image: "/stephen_hawking.png",
         description: "A theoretical physicist known for his work on black holes and cosmology, particularly his book 'A Brief History of Time.'"
     },
     {
         id: 6,
         name: "Richard Feynman",
         span: "1918–1988",
-        image: "/richard_feynman.jpg",
+        image: "/richard_feynman.png",
         description: "An American theoretical physicist known for his work in quantum mechanics, quantum electrodynamics, and particle physics, as well as his engaging teaching style."
     },
     {
         id: 7,
         name: "Marie Curie",
         span: "1867–1934",
-        image: "/marie_curie_physics.jpg",
+        image: "/madam_curie.png",
         description: "Known for her research on radioactivity and her contributions to the understanding of atomic physics, she was the first woman to win a Nobel Prize."
     },
     {
         id: 8,
         name: "Max Planck",
         span: "1858–1947",
-        image: "/max_planck.jpg",
+        image: "/max_planck.png",
         description: "A German physicist known as the father of quantum theory, which revolutionized our understanding of atomic and subatomic processes."
     },
     {
         id: 9,
         name: "James Clerk Maxwell",
         span: "1831–1879",
-        image: "/james_clerk_maxwell.jpg",
+        image: "/james_clerk_maxwell.png",
         description: "A Scottish physicist best known for formulating the classical theory of electromagnetic radiation, bringing together electricity, magnetism, and light."
     },
     {
         id: 10,
         name: "Enrico Fermi",
         span: "1901–1954",
-        image: "/enrico_fermi.jpg",
+        image: "/enrico_fermi.png",
         description: "An Italian-American physicist known for his work on nuclear reactions and for creating the first nuclear reactor, known as the Chicago Pile-1."
     }
 ];
@@ -389,32 +389,32 @@ export const physicsBranches = [
     {
         "branch": "Classical Mechanics",
         "description": "The study of the motion of bodies under the influence of forces. It includes concepts such as Newton's laws of motion and the principles of energy and momentum.",
-        "image": "/images/classical_mechanics.jpg"
+        "image": "/classical_mechanics.png"
     },
     {
         "branch": "Quantum Mechanics",
         "description": "The branch of physics that deals with the behavior of matter and energy on very small scales, such as atoms and subatomic particles. It introduces concepts like wave-particle duality and uncertainty principles.",
-        "image": "/images/quantum_mechanics.jpg"
+        "image": "/quantum_mechanics.png"
     },
     {
         "branch": "Thermodynamics",
         "description": "The study of heat, energy, and the laws governing their interactions. Thermodynamics explores concepts such as temperature, entropy, and the laws of energy conservation.",
-        "image": "/images/thermodynamics.jpg"
+        "image": "/thermodynamics.png"
     },
     {
         "branch": "Electromagnetism",
         "description": "The branch of physics that studies electric and magnetic fields and their interactions with charged particles. It includes Maxwell's equations and the principles of electricity and magnetism.",
-        "image": "/images/electromagnetism.jpg"
+        "image": "/electromagnetism.png"
     },
     {
         "branch": "Relativity",
         "description": "The study of the effects of gravity and the structure of spacetime. It includes both special relativity and general relativity, introduced by Albert Einstein.",
-        "image": "/images/relativity.jpg"
+        "image": "/relativity.png"
     },
     {
         "branch": "Astrophysics",
         "description": "The branch of astronomy that applies the principles of physics to understand celestial bodies and phenomena, such as stars, galaxies, and the universe's evolution.",
-        "image": "/images/astrophysics.jpg"
+        "image": "/astrophysics.png"
     }
 ]
 
