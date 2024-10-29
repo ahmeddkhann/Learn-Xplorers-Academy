@@ -610,70 +610,70 @@ export const literaryFigures = [
         id: 1,
         name: "William Shakespeare",
         span: "1564–1616",
-        image: "/william_shakespeare.jpg",
+        image: "/william_shakespeare.png",
         description: "Often regarded as the greatest playwright and poet in the English language, Shakespeare's works include iconic plays such as 'Hamlet,' 'Romeo and Juliet,' and 'Macbeth.'"
     },
     {
         id: 2,
         name: "Jane Austen",
         span: "1775–1817",
-        image: "/jane_austen.jpg",
+        image: "/jane_austen.png",
         description: "A prominent novelist known for her keen observations of social manners and her exploration of women's lives in novels like 'Pride and Prejudice' and 'Sense and Sensibility.'"
     },
     {
         id: 3,
         name: "Charles Dickens",
         span: "1812–1870",
-        image: "/charles_dickens.jpg",
+        image: "/charles_dickens.png",
         description: "An influential Victorian novelist whose works, such as 'A Tale of Two Cities' and 'Great Expectations,' often highlight social issues and the struggles of the poor."
     },
     {
         id: 4,
         name: "George Orwell",
         span: "1903–1950",
-        image: "/george_orwell.jpg",
+        image: "/george_orwell.png",
         description: "A novelist and essayist known for his political commentary and dystopian works, including '1984' and 'Animal Farm,' which critique totalitarianism and societal injustice."
     },
     {
         id: 5,
         name: "Virginia Woolf",
         span: "1882–1941",
-        image: "/virginia_woolf.jpg",
+        image: "/virginia_woolf.png",
         description: "A modernist writer known for her innovative narrative techniques in novels like 'Mrs. Dalloway' and 'To the Lighthouse,' exploring themes of time, identity, and consciousness."
     },
     {
         id: 6,
         name: "F. Scott Fitzgerald",
         span: "1896–1940",
-        image: "/f_scott_fitzgerald.jpg",
+        image: "/f_scott_fitzgerald.png",
         description: "An American novelist famous for his portrayal of the Jazz Age in works like 'The Great Gatsby,' which examines themes of decadence, idealism, and social change."
     },
     {
         id: 7,
         name: "Emily Dickinson",
         span: "1830–1886",
-        image: "/emily_dickinson.jpg",
+        image: "/emily_dickinson.png",
         description: "An influential American poet known for her unique style and introspective themes, Dickinson's poetry often delves into topics of death, immortality, and nature."
     },
     {
         id: 8,
         name: "T.S. Eliot",
         span: "1888–1965",
-        image: "/t_s_eliot.jpg",
+        image: "/t_s_eliot.png",
         description: "A major modernist poet and essayist, known for works such as 'The Waste Land' and 'The Love Song of J. Alfred Prufrock,' which reflect the complexities of the 20th century."
     },
     {
         id: 9,
         name: "J.K. Rowling",
         span: "1965–",
-        image: "/jk_rowling.jpg",
+        image: "/jk_rowling.png",
         description: "The author of the immensely popular 'Harry Potter' series, which has had a profound impact on children's literature and popular culture worldwide."
     },
     {
         id: 10,
         name: "Chinua Achebe",
         span: "1930–2013",
-        image: "/chinua_achebe.jpg",
+        image: "/chinua_achebe.png",
         description: "A Nigerian novelist and essayist known for his landmark novel 'Things Fall Apart,' which addresses themes of colonialism, culture, and identity."
     }
 ];
@@ -745,37 +745,37 @@ export const literatureGenres = [
     {
         "genre": "Poetry",
         "description": "A form of literary art that uses rhythmic and aesthetic qualities of language to evoke meanings, emotions, and imagery.",
-        "image": "/images/poetry.jpg"
+        "image": "/poetry.png"
     },
     {
         "genre": "Drama",
         "description": "A genre of literature that is intended for performance, often exploring themes of conflict, emotion, and human experience.",
-        "image": "/images/drama.jpg"
+        "image": "/drama.png"
     },
     {
         "genre": "Novel",
         "description": "A long fictional narrative that explores complex characters and themes, often reflecting societal issues and human experiences.",
-        "image": "/images/novel.jpg"
+        "image": "/novel.png"
     },
     {
         "genre": "Short Story",
         "description": "A brief fictional narrative that focuses on a particular incident or character, typically highlighting a specific theme or moral.",
-        "image": "/images/short_story.jpg"
+        "image": "/short_story.png"
     },
     {
         "genre": "Essays",
         "description": "A literary form that presents the author's argument, perspective, or reflection on a particular topic, often combining personal insight with research.",
-        "image": "/images/essays.jpg"
+        "image": "/essay.png"
     },
     {
         "genre": "Biography",
         "description": "A genre that narrates the life story of an individual, highlighting key events, achievements, and the impact they had on society.",
-        "image": "/images/biography.jpg"
+        "image": "/biography.png"
     },
     {
         "genre": "Fantasy",
         "description": "A literary genre that features imaginative and fantastical elements, often set in fictional worlds and involving magical or supernatural events.",
-        "image": "/images/fantasy.jpg"
+        "image": "/fantasy.png"
     }
 ]
 export const csBasic = {
