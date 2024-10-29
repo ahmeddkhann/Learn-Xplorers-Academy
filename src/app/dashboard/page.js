@@ -94,7 +94,8 @@ const DashboardPage = () => {
           {courses.map((course) => (
             <div
               key={course.id}
-              className="bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+              className="bg-gray-700 rounded-lg shadow-md shadow-white opacity-50 hover:opacity-100 hover:bg-gray-900 hover:shadow-white hover:shadow-2xl
+               overflow-hidden transition-transform duration-300 hover:scale-105"
             >
               <Image
                 src={course.image}
