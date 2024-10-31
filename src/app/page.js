@@ -4,61 +4,90 @@ import React from 'react'
 import { details } from './data'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Spotlight } from '@/components/ui/spotlight'
-import { WavyBackground } from '@/components/ui/wavy-background'
+import { courses } from './data'
+import { BackgroundBeams } from '@/components/ui/background-beams'
 
 const Page = () => {
   return (
-    <div className="relative bg-gray-900 text-gray-300 min-h-screen pt-12 overflow-hidden ">
-      
-      {/* Spotlight background */}
-      <Spotlight className="top-0 left-0 opacity-100" fill="white" />
-      <WavyBackground className="max-w-4xl mx-auto">
-      <div className="flex justify-center">
-        <div className="text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 transition-shadow duration-300 hover:shadow-2xl hover:shadow-gray-700">
-            {details.title}
-          </h1>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl mb-2">
-            {details.subtitle}
-          </h2>
+    <div className="bg-gray-900 text-white min-h-screen">
+      {/* Logo at the top center */}
+      <div className="mb-6 pt-4 pl-2">
+        <Image
+          src={details.Image}
+          width={80}
+          height={80}
+          alt="Logo"
+          className=""
+        />
+      </div>
 
-          <span className="inline-block transition-shadow duration-300 hover:shadow-2xl hover:shadow-gray-700">
-            <Image
-              src={details.Image}
-              width={150}
-              height={120}
-              alt="learnXplorers Logo"
-              className="rounded-2xl mt-10 lg:ml-0"
-            />
-          </span>
+      {/* Centered Content */}
+      <div className="text-center px-4 flex flex-col items-center justify-center relative">
+        <h1 className="text-5xl font-bold mb-4">
+          {details.title}
+        </h1>
+        <h3 className="text-3xl mb-2">
+          {details.subtitle}
+        </h3>
+        
+        <div className='pt-5 mb-5'>
+          <p className="mb-5 text-center">Here are the courses we offer!</p>
 
-          <p className="text-xl mt-10 mb-2">
-            {details.text}
-          </p>
+          {/* Courses Section */}
+          <section className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 w-full">
+            {courses.map((course) => (
+              <div
+                key={course.id}
+                className="bg-gray-700 rounded-lg hover:translate-x-1 lg:hover:translate-y-2 opacity-100 hover:opacity-100 hover:bg-gray-900 hover:shadow-white hover:shadow-2xl
+                 overflow-hidden transition-transform duration-300 hover:scale-105"
+              >
+                <Image
+                  src={course.image}
+                  width={400}
+                  height={150}
+                  alt={course.title}
+                  className="w-full h-32 object-cover"
+                />
+                <div className="p-3">
+                  <h3 className="text-lg font-semibold mb-2">{course.title}</h3>
+                  <p className="text-gray-200 mb-3 text-sm opacity-50">{course.description}</p>
+                 
+                </div>
+              </div>
+            ))}
+          </section>
         </div>
-      </div>
-      </WavyBackground>
-      <div className="text-center mb-6">
-        <Link href="/login">
-          <button className="px-4 py-2 mr-4 rounded-2xl bg-blue-200 text-gray-800 hover:bg-blue-300 transform transition-transform duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-lg">
-            Log In
-          </button>
-        </Link>
 
-        <Link href="/signup">
-          <button className="px-4 py-2 mr-4 rounded-2xl bg-gray-200 text-gray-800 hover:bg-gray-300 transform transition-transform duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-lg">
-            Sign Up
-          </button>
-        </Link>
+        <div className="mt-6 text-center mb-10">
+  <p className="text-lg mb-4">
+    {details.text}
+  </p>
+  
+  <div className="flex justify-center space-x-4">
+    <Link href="/signup">
+      <button className="px-4 py-2 rounded-2xl bg-blue-600 text-white hover:bg-blue-700 transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+        Sign Up
+      </button>
+    </Link>
 
-        <Link href="/send-message">
-          <button className="px-4 py-2 rounded-2xl bg-yellow-300 text-gray-800 hover:bg-yellow-400 transform transition-transform duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-lg">
-            Send Feedback
-          </button>
-        </Link>
+    <Link href="/login">
+      <button className="px-4 py-2 rounded-2xl bg-gray-600 text-white hover:bg-gray-700 transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+        Log In
+      </button>
+    </Link>
+
+    <Link href="/send-message">
+      <button className="px-4 py-2 rounded-2xl bg-yellow-500 text-gray-800 hover:bg-yellow-600 transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+        Send Feedback
+      </button>
+    </Link>
+  </div>
+</div>
+
       </div>
+      <BackgroundBeams />
     </div>
+    
   )
 }
 
