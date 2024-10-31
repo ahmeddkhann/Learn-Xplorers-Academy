@@ -93,6 +93,7 @@ const SignUpPage = () => {
                             className="w-full px-4 py-2 rounded-md bg-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             placeholder="Username..."
                         />
+                        <span className='text-xs z-60 text-gray-200'> username should be atleast 4 characters</span>
                     </div>
                     <div>
                         <label htmlFor="password" className="block text-gray-400 mb-1">Password</label>
@@ -106,6 +107,7 @@ const SignUpPage = () => {
                             className="w-full px-4 py-2 rounded-md bg-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             placeholder="Password..."
                         />
+                        <span className='text-xs z-60 text-gray-200'> password must contain atleast 6 characters</span>
                     </div>
                     <div>
                         <label htmlFor="gender" className="block text-gray-400 mb-1">Gender</label>

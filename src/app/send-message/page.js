@@ -89,6 +89,7 @@ const SendMessagePage = () => {
                             placeholder="Message..."
                             rows="4"
                         />
+                        <span className='text-xs z-60 text-gray-200'> message should be atleast 10 characters</span>
                     </div>
                     <button
                         type="submit"

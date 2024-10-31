@@ -10,19 +10,15 @@ const DashboardPage = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isLargeScreen, setIsLargeScreen] = useState(true);
 
-  // Update the screen size state on window resize
   useEffect(() => {
     const handleResize = () => {
-      setIsLargeScreen(window.innerWidth >= 768); // Adjust the breakpoint as needed
+      setIsLargeScreen(window.innerWidth >= 768); 
     };
 
-    // Add event listener for resize
     window.addEventListener("resize", handleResize);
 
-    // Initial check
     handleResize();
 
-    // Cleanup listener on unmount
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -119,7 +115,7 @@ const DashboardPage = () => {
       </main>
 
       {/* Render Meteors only on larger screens */}
-      {isLargeScreen && <Meteors number={100} />}
+      {isLargeScreen && <Meteors number={20} />}
     </div>
   );
 };
