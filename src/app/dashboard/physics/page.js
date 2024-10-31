@@ -78,7 +78,7 @@ const Physics = () => {
         {physicsBranches.map((branch, index) => (
           <div
             key={index}
-            className="bg-gray-600 opacity-50 hover:opacity-100 hover:bg-gray-800 shadow-md rounded-lg p-4 
+            className="bg-gray-600 opacity-80 hover:opacity-100 hover:bg-gray-800 shadow-md rounded-lg p-4 
             mx-4 transition-transform duration-300 transform hover:scale-105  hover:shadow-2xl hover:shadow-white "
           >
             <img
@@ -86,10 +86,15 @@ const Physics = () => {
               alt={branch.branch}
               className="w-full h-32 object-cover rounded-lg mb-4 opacity-100"
             />
-            <h3 className="text-xl font-semibold opacity-100">
+            <h3 className="text-xl font-bold text-gray-100">
               {branch.branch}
             </h3>
-            <p className="text-gray-300 text-sm ">{branch.description}</p>
+            <p className="text-gray-300 text-sm mt-2 ">{branch.description}</p>
+            <div className='mt-4 mb-2 text-black'>
+           <Link href={"#"} className='bg-gray-100 hover:bg-gray-400 px-3 py-2 rounded-lg '>
+              View more
+           </Link>
+           </div>
           </div>
         ))}
       </div>

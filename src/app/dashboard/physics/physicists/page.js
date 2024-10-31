@@ -45,7 +45,7 @@ const Physicists = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-0 sm:mx-4">
                 {physicist.map((physicistItem) => (
                     <div key={physicistItem.id} className="bg-blue-200 hover:bg-blue-400
-                    opacity-50 hover:opacity-100 hover:translate-x-3 hover:translate-y-3 hover:shadow-white hover:shadow-2xl
+                    opacity-80 hover:opacity-100  hover:shadow-white hover:shadow-2xl
                      rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 p-4">
                         <img
                             src={physicistItem.image}
@@ -57,6 +57,11 @@ const Physicists = () => {
                             <p className="text-gray-500">{physicistItem.span}</p>
                             <p className="text-gray-700 mt-2">{physicistItem.description}</p>
                         </div>
+                       <div className= 'ml-3 mb-2 text-black'>
+           <Link href={"#"} className='bg-gray-100 hover:bg-gray-400 px-3 py-2 rounded-lg '>
+              View more
+           </Link>
+           </div>
                     </div>
                 ))}
             </div>
