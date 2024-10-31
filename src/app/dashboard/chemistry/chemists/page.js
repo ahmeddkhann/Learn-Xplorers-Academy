@@ -45,7 +45,7 @@ const Chemists = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-0 sm:mx-4">
                 {chemist.map((chemistItem) => (
                     <div key={chemistItem.id} className="bg-blue-200 shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:bg-blue-400
-                    opacity-50 hover:opacity-100 hover:translate-x-3 hover:translate-y-3 hover:shadow-white hover:shadow-2xl hover:scale-105 p-4">
+                    opacity-80 hover:opacity-100  hover:shadow-white hover:shadow-2xl hover:scale-105 p-4">
                         <img
                             src={chemistItem.image}
                             alt={chemistItem.name}
@@ -56,6 +56,11 @@ const Chemists = () => {
                             <p className="text-gray-500">{chemistItem.span}</p>
                             <p className="text-gray-700 mt-2">{chemistItem.description}</p>
                         </div>
+                        <div className='mt-2 ml-3 mb-2 text-white'>
+           <Link href={"#"} className='bg-gray-300 hover:bg-gray-500 px-3 py-2 rounded-lg  '>
+              view more
+           </Link>
+           </div>
                     </div>
                 ))}
             </div>

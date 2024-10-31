@@ -75,7 +75,7 @@ const Biology = () => {
             <p className="text-gray-300 text-sm ">{branch.description}</p>
 
            <div className='mt-4 mb-2'>
-           <Link href={"#"} className='bg-green-600 hover:bg-gren-800 px-2 py-2 rounded-lg text-white '>
+           <Link href={"#"} className='bg-green-600 hover:bg-green-800 px-2 py-2 rounded-lg text-white '>
               view more
            </Link>
            </div>

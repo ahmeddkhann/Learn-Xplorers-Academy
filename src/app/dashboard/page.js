@@ -90,7 +90,7 @@ const DashboardPage = () => {
           {courses.map((course) => (
             <div
               key={course.id}
-              className="bg-gray-700 rounded-lg hover:translate-x-3 hover:translate-y-4 opacity-50 hover:opacity-100 hover:bg-gray-900 hover:shadow-white hover:shadow-2xl
+              className="bg-gray-700 rounded-lg lg:hover:translate-x-1 lg:hover:translate-y-2 opacity-80 hover:opacity-100 hover:bg-gray-900 hover:shadow-white hover:shadow-2xl
                overflow-hidden transition-transform duration-300 hover:scale-105"
             >
               <Image
