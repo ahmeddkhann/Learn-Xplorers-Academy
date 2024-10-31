@@ -51,6 +51,11 @@ const BiologyBooks = () => {
               <p className="text-gray-200 mb-2">by {book.author}</p>
               <p className="text-gray-300">Published: {book.year}</p>
               <p className="text-gray-400 mt-2">{book.description}</p>
+              <div className=' mt-4 mb-2'>
+           <Link href={"#"} className='bg-green-600 hover:bg-green-800 px-2 py-2 rounded-lg text-white '>
+              Read more
+           </Link>
+           </div>
             </div>
           </BackgroundGradient>
         ))}

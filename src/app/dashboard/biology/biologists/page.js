@@ -45,13 +45,18 @@ const Biologists = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-0 sm:mx-4">
                 {biologist.map((bio) => (
                     <div key={bio.id} className="bg-gray-800 hover:bg-gray-950 rounded-lg overflow-hidden
-                    opacity-50 hover:opacity-100 hover:translate-x-3 hover:translate-y-3 hover:shadow-white hover:shadow-2xl transition-transform duration-300 hover:scale-105 p-4">
+                    opacity-80 hover:opacity-100  hover:shadow-white hover:shadow-2xl transition-transform duration-300 hover:scale-105 p-4">
                         <img src={bio.image} alt={bio.name} className="w-full h-32 object-cover rounded-lg mb-4" />
                         <div className="p-4">
                             <h2 className="text-xl text-gray-100 font-bold">{bio.name}</h2>
                             <p className="text-gray-200 mb-2">{bio.span}</p>
                             <p className="text-gray-400">{bio.description}</p>
                         </div>
+                        <div className='ml-4 mb-2'>
+           <Link href={"#"} className='bg-green-600 hover:bg-green-800 px-2 py-2 rounded-lg text-white '>
+              view more
+           </Link>
+           </div>
                     </div>
                 ))}
             </div>
