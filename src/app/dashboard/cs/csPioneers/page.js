@@ -48,7 +48,7 @@ const CSPioneers = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-0 sm:mx-4">
                 {csPioneers.map((pioneer) => (
                     <div key={pioneer.id} className="bg-gray-800 shadow-2xl rounded-lg overflow-hidden hover:bg-gray-950
-                    opacity-50 hover:opacity-100 hover:translate-x-3 hover:translate-y-3 hover:shadow-white hover:shadow-2xl
+                    opacity-80 hover:opacity-100  hover:shadow-white hover:shadow-2xl
                      transition-transform duration-300 hover:scale-105">
                         <img src={pioneer.image} alt={pioneer.name} className="w-full h-48 object-cover" />
                         <div className="p-4">
@@ -56,6 +56,11 @@ const CSPioneers = () => {
                             <p className="text-gray-200">{pioneer.span}</p>
                             <p className="text-gray-200 mb-2">{pioneer.description}</p>
                         </div>
+                        <div className='mb-4 ml-4 text-white'>
+           <Link href={"#"} className='bg-blue-600 hover:bg-blue-800 px-3 py-2 rounded-lg '>
+              View more
+           </Link>
+           </div>
                     </div>
                 ))}
             </div>

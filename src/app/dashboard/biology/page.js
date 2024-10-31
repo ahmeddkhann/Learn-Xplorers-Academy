@@ -69,7 +69,7 @@ const Biology = () => {
               alt={branch.branch}
               className="w-full h-32 object-cover rounded-lg mb-4 opacity-100"
             />
-            <h3 className="text-xl font-semibold opacity-100">
+            <h3 className="text-xl font-bold text-gray-200">
               {branch.branch}
             </h3>
             <p className="text-gray-300 text-sm ">{branch.description}</p>
